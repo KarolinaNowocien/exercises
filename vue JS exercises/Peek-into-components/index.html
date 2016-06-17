@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Peek-into-components.css" />
+    <title>Vue-exercise5</title> 
+  </head>
+  <body>
+<div id="app">
+
+    <counter subject="Likes"></counter>
+    <counter subject="Dislikes"></counter>
+
+</div>
+
+<template id="counter-template">
+  <h1>{{ subject }}</h1>
+  <button @click="count+=1">{{ count }}</button>
+</template>
+
+
+<script src="../vue.js"></script>
+<script src="js/Peek-into-components.js"></script>
+</body>
+</html>

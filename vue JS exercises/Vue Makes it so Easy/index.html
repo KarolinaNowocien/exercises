@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Vue Makes it so Easy.css"/>
+    <title>Vue-exercise9</title> 
+  </head>
+  <body>
+
+<div id="app">
+	
+	<tasks :list="tasks"></tasks>
+		
+</div>
+
+<template id="tasks-template">
+	<h1>
+		My Tasks <span v-show="remaining">({{ remaining }})</span>
+	</h1>
+  <ul v-show="list.length">
+		<li :class="{ 'completed' : task.completed }" 
+			v-for="task in list"
+			@click="task.completed = !task.completed"
+		>
+			{{ task.body }}
+			<strong @click="deleteTask(task)">x</strong>
+		</li>
+	</ul>
+	<p v-else>No tasks yet!</p>
+	<button @click="clearCompleted">Clear Completed</button>
+</template>
+
+<script src="../vue.js"></script>
+<script src="js/Vue Makes it so Easy.js"></script>
+</body>
+</html>

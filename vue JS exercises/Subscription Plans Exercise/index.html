@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Subscription Plans Exercise.css" />
+    <title>Vue-exercise7</title> 
+  </head>
+  <body>
+
+<div id="app">
+	<pre>
+		<!--{{ $data | json }} -->
+	</pre>
+
+	<div v-for="plan in plans">
+		<plan :plan="plan" :active.sync="active"></plan>
+	</div>
+</div>
+
+<template id= "plan-template">
+	<div>
+		<span class="Plan_name">{{ plan.name }}</span>
+		<span class="Plan_price">{{ plan.price }} $/month</span>
+		<button @click="setActivePlan" v-show='plan.name !== active.name'>
+			{{isDowngrade ? 'Downgrade' : 'Upgrade'}}
+		</button>
+
+		<span v-else>
+			Current
+		</span>
+	</div>
+</template>
+
+<script src="../vue.js"></script>
+<script src="js/Subscription Plans Exercise.js"></script>
+</body>
+</html>

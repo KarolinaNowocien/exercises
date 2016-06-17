@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Custom Components.css"/>
+    <title>Vue-exercise9</title> 
+  </head>
+  <body>
+
+<div id="app">
+	
+	<tasks :list="tasks"></tasks>
+		
+</div>
+
+<template id="tasks-template">
+  <ul>
+		<li :class="{ 'completed' : task.completed }" 
+			v-for="task in list"
+			@click="task.completed = !task.completed"
+		>
+			{{ task.body }}
+		</li>
+	</ul>
+</template>
+
+<script src="../vue.js"></script>
+<script src="js/Custom Components.js"></script>
+</body>
+</html>

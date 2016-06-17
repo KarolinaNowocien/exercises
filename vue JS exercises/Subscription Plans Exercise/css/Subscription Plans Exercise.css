@@ -1,0 +1,18 @@
+
+body {
+    margin: auto;
+    width: 350px;
+    display: block;
+    overflow: auto;
+}
+
+span {
+	display:inline-block;
+	width:100px;
+	text-align:left;
+}
+
+.Plan_name{
+	color:green;
+	font-weight: 600;
+}

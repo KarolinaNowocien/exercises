@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/vue-show.css" />
+    <title>Vue-exercise1</title> 
+  </head>
+  <body>
+<div id="app">
+  <form>
+    <span class="error" v-show="!message"> <!-- v-if removes span, not hide it -->
+      You must enter a message
+    </span>
+    <textarea v-model="message"></textarea>
+    <button type="submit" v-show="message">
+      Send message
+    </button>
+  </form>
+  	<pre>
+  		{{ $data | json }}
+  	</pre>
+</div>
+<script src="../vue.js"></script>
+<script src="js/vue-show.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <title>Vue-exercise1</title> 
+  </head>
+  <body>
+<div id="app">
+  <h1>{{ message }}<h1>
+  	<input v-model="message">
+  	<pre>
+  		{{ $data | json }}
+  	</pre>
+</div>
+<script src="../vue.js"></script>
+<script src="js/databinding.js"></script>
+</body>
+</html>

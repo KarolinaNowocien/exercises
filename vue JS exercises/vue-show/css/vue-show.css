@@ -1,0 +1,14 @@
+
+#app{
+	width: 350px;
+}
+
+.error{
+color:red;
+font-style: italic;
+}
+
+textarea{
+	height: 200px;
+	width: 300px;
+}

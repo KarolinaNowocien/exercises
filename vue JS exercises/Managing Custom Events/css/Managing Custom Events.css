@@ -1,0 +1,41 @@
+
+body {
+    margin: auto;
+    width: 20em;
+    display: block;
+    overflow: auto;
+}
+
+
+#app{
+	margin-top:10em;
+	width: 15em;
+}
+
+.Alert{
+	background-color: #ddd;
+	padding: 1em;
+	border: 1px solid #999999;
+	position:relative;
+}
+
+.Alert__close{
+	font-weight:bold;
+	position:absolute;
+	top:0.1em;
+	right:0.5em;
+	cursor: pointer;
+}
+
+.Alert--success{
+	background-color: #9ed670;
+	border: 1px solid #4d7358;
+}
+
+.Alert--error{
+	background-color: #fe5757;
+	border: 1px solid #cb2424;
+}
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Component Exercise1.css"/>
+    <title>JS Bin</title> 
+  </head>
+  <body>
+<div id="app">
+  	<alert type="success">
+  		<strong>Success!</strong>Your account has been updated!
+  	</alert>
+  	<alert type="error">
+  		<strong>Error!</strong>Your account has not been updated!
+  	</alert>
+ <div>
+
+
+ 	<template id="alert-template">
+ 		<div :class="alertClasses" v-show="show">
+ 			<slot></slot>
+ 			<span class="Alert__close" @click= "show=false">x</span>
+ 		</div>
+ 	</template>
+
+<script src="../vue.js"></script>
+<script src="js/Component Exercise1.js"></script>
+</html>

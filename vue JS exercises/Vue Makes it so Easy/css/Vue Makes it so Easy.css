@@ -1,0 +1,20 @@
+
+body {
+    margin: auto;
+    width: 350px;
+    display: block;
+    overflow: auto;
+}
+
+
+.completed{
+	text-decoration: line-through;
+}
+
+li {
+	cursor: pointer;
+}
+
+.completed ul li strong{
+	text-decoration: none;
+}

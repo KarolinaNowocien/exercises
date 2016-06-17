@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Vue Filter Essentials.css"/>
+    <title>JS Bin</title> 
+  </head>
+  <body>
+
+  	<ul>
+      <li v-for="person in people | role 'admin'">{{person.name}}</li>
+    </ul>
+
+
+<script src="../vue.js"></script>
+<script src="js/Vue Filter Essentials.js"></script>
+</html>

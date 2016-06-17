@@ -1,0 +1,21 @@
+
+body {
+    margin: auto;
+    width: 350px;
+    display: block;
+    overflow: auto;
+}
+
+span {
+	display:inline-block;
+	width:100px;
+	text-align:left;
+}
+
+.completed{
+	text-decoration: line-through;
+}
+
+li{
+	cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/event-handling.css" />
+    <title>Vue-exercise3</title> 
+  </head>
+  <body>
+<div id="app">
+  <form action="done.html" @submit="handleIt"> <!-- @ submit == v-on:submit.prevent-->
+    <button type="submit">
+      Submit me!
+    </button>
+  </form>
+</div>
+<script src="../vue.js"></script>
+<script src="js/event-handling.js"></script>
+</body>
+</html>

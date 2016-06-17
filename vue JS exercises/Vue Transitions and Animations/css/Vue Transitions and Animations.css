@@ -1,0 +1,86 @@
+
+body {
+    margin: auto;
+    width: 25em;
+    display: block;
+    overflow: auto;
+}
+
+.inner{
+	position: relative;
+	color:#54b2a9;
+	top:27vh;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 11vh;
+	cursor: pointer;
+}
+
+.inner:hover{
+	color: #009688;
+}
+
+.replacement{
+	position: absolute;
+	color:#54b2a9;
+	top:62vh;
+	left:44.5vw;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 5vh;
+	cursor: pointer;
+	margin-bottom: 2vh;
+	line-height: 7.5vh;
+}
+
+.replacement:hover{
+	color: #009688;
+}
+
+button{
+	position: absolute;
+	bottom:45vh;
+	left:46vw;
+	border-radius: 5vh;
+	text-transform: uppercase;
+	padding: 2vh;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid 	#ff6f69;
+}
+
+button:focus{
+	outline:none;
+}
+.rotate {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.rotate:hover {
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
+
+
+
+.bounce {
+	color: #ff6f69;
+	position: relative;
+
+  	-webkit-animation: animation 1500ms linear infinite both;
+  	animation: animation 1500ms linear infinite both;
+}
+.bounce:hover {
+	color: #ff6f69;
+}
+
+
+
+

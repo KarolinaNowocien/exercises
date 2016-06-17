@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Vue Transitions and Animations.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <title>JS Bin</title> 
+  </head>
+  <body>
+<div id="app">
+    <div v-show ="show" class="inner animated wobble" transition="fade" @click="show = !show">Hello world!</div>
+    <div v-show ="!show" class="replacement animated" transition="fadeReverse" @click="!show = show"><i class="fa fa-angle-up bounce" aria-hidden="true"></i></br> Click here!</div>
+    <button class="rotate" @click="show = !show">Animate me!</button>
+</div>
+
+
+  <script src="../vue.js"></script>
+  <script src="js/Vue Transitions and Animations.js"></script>
+
+  </body>
+</html>

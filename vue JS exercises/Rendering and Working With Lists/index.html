@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+    <link rel="stylesheet" href="css/Rendering and Working With Lists.css" />
+    <title>Vue-exercise8</title> 
+  </head>
+  <body>
+
+<div id="app">
+	
+	<ul>
+		<li :class="{ 'completed' : task.completed }" 
+			v-for="task in tasks"
+			@click="toggleCompletedFor(task)"
+		>
+			{{ task.body }}
+		</li>
+	</ul>
+		
+</div>
+
+<script src="../vue.js"></script>
+<script src="js/Rendering and Working With Lists.js"></script>
+</body>
+</html>
